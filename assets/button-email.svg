@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="44" viewBox="0 0 144 44" role="img" aria-labelledby="title desc">
+<title id="title">Email me</title>
+<desc id="desc">Custom navy and white artwork for James Vincent Calunsag. Decorative motion stops when reduced motion is requested.</desc>
+<defs>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1B3A63" stroke-opacity=".3"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#2E5A94" stop-opacity=".4"/><stop offset="1" stop-color="#0A1628" stop-opacity="0"/></radialGradient>
+  <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#2E5A94"/><stop offset=".5" stop-color="#0F2039"/><stop offset="1" stop-color="#1B3A63"/></linearGradient>
+</defs>
+<style>
+text { font-family: 'Segoe UI', Arial, sans-serif; }
+.mono { font-family: Consolas, 'Courier New', monospace; }
+.orbit { transform-box: fill-box; transform-origin: center; animation: orbit 38s linear infinite; }
+.reverse { animation-direction: reverse; animation-duration: 52s; }
+.flow { stroke-dasharray: 5 19; animation: flow 5s linear infinite; }
+.pulse { animation: pulse 5s ease-in-out infinite; }
+.float { animation: float 7s ease-in-out infinite; }
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes flow { to { stroke-dashoffset: -96; } }
+@keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: .9; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@media (prefers-reduced-motion: reduce) {
+  .orbit, .flow, .pulse, .float { animation: none !important; }
+}
+</style>
+<rect x="0" y="0" width="144" height="44" rx="16" fill="#0A1628" />
+<rect x="1" y="1" width="142" height="42" rx="7" fill="#0F2039" stroke="#2E5A94"/><text x="17" y="28" font-size="14" fill="#FFFFFF" font-weight="600" >Email me</text><path d="M114 27 l10 -10 m-10 0 h10 v10" fill="none" stroke="#C9CFD9" stroke-width="1.5" />
+</svg>

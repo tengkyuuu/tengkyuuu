@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="214" viewBox="0 0 1200 214" role="img" aria-labelledby="title desc">
+<title id="title">SHM — sensor to dashboard</title>
+<desc id="desc">Custom navy and white artwork for James Vincent Calunsag. Decorative motion stops when reduced motion is requested.</desc>
+<defs>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1B3A63" stroke-opacity=".3"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#2E5A94" stop-opacity=".4"/><stop offset="1" stop-color="#0A1628" stop-opacity="0"/></radialGradient>
+  <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#2E5A94"/><stop offset=".5" stop-color="#0F2039"/><stop offset="1" stop-color="#1B3A63"/></linearGradient>
+</defs>
+<style>
+text { font-family: 'Segoe UI', Arial, sans-serif; }
+.mono { font-family: Consolas, 'Courier New', monospace; }
+.orbit { transform-box: fill-box; transform-origin: center; animation: orbit 38s linear infinite; }
+.reverse { animation-direction: reverse; animation-duration: 52s; }
+.flow { stroke-dasharray: 5 19; animation: flow 5s linear infinite; }
+.pulse { animation: pulse 5s ease-in-out infinite; }
+.float { animation: float 7s ease-in-out infinite; }
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes flow { to { stroke-dashoffset: -96; } }
+@keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: .9; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@media (prefers-reduced-motion: reduce) {
+  .orbit, .flow, .pulse, .float { animation: none !important; }
+}
+</style>
+<rect x="0" y="0" width="1200" height="214" rx="16" fill="#0A1628" />
+<text x="40" y="44" font-size="13" fill="#8A94A6" font-weight="400" class="mono" letter-spacing="2">SHM / A READING’S JOURNEY</text><path d="M110 100 H1080" fill="none" stroke="#2E5A94" stroke-width="2" /><path d="M110 100 H1080" fill="none" stroke="#C9CFD9" stroke-width="3" class="flow"/><rect x="40" y="73" width="200" height="109" rx="8" fill="#0F2039" stroke="#1B3A63"/><text x="56" y="98" font-size="12" fill="#8A94A6" font-weight="400" class="mono">01</text><text x="56" y="131" font-size="17" fill="#FFFFFF" font-weight="600" class="mono">SENSOR</text><text x="56" y="158" font-size="15" fill="#C9CFD9" font-weight="400" >accel / strain</text><rect x="270" y="73" width="200" height="109" rx="8" fill="#0F2039" stroke="#1B3A63"/><text x="286" y="98" font-size="12" fill="#8A94A6" font-weight="400" class="mono">02</text><text x="286" y="131" font-size="17" fill="#FFFFFF" font-weight="600" class="mono">ESP32</text><text x="286" y="158" font-size="15" fill="#C9CFD9" font-weight="400" >filter / pack</text><rect x="500" y="73" width="200" height="109" rx="8" fill="#0F2039" stroke="#1B3A63"/><text x="516" y="98" font-size="12" fill="#8A94A6" font-weight="400" class="mono">03</text><text x="516" y="131" font-size="17" fill="#FFFFFF" font-weight="600" class="mono">TRANSPORT</text><text x="516" y="158" font-size="15" fill="#C9CFD9" font-weight="400" >Wi-Fi / MQTT</text><rect x="730" y="73" width="200" height="109" rx="8" fill="#0F2039" stroke="#1B3A63"/><text x="746" y="98" font-size="12" fill="#8A94A6" font-weight="400" class="mono">04</text><text x="746" y="131" font-size="17" fill="#FFFFFF" font-weight="600" class="mono">STORAGE</text><text x="746" y="158" font-size="15" fill="#C9CFD9" font-weight="400" >time series</text><rect x="960" y="73" width="200" height="109" rx="8" fill="#0F2039" stroke="#1B3A63"/><text x="976" y="98" font-size="12" fill="#8A94A6" font-weight="400" class="mono">05</text><text x="976" y="131" font-size="17" fill="#FFFFFF" font-weight="600" class="mono">DASHBOARD</text><text x="976" y="158" font-size="15" fill="#C9CFD9" font-weight="400" >charts / alerts</text>
+</svg>
