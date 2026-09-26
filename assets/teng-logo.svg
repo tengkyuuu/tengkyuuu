@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="206" height="44" viewBox="0 0 206 44" role="img" aria-labelledby="title desc">
-<title id="title">Explore portfolio</title>
-<desc id="desc">Teng / James Vincent Calunsag. Forest green, muted gold, and textured drafting paper. Static artwork.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="230" viewBox="0 0 560 230" role="img" aria-labelledby="title desc">
+<title id="title">TENG / custom wordmark</title>
+<desc id="desc">TENG in custom geometric lettering, with a muted gold T and forest green E, N, and G.</desc>
 <defs>
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#B5BAA7" stroke-opacity=".24" stroke-width=".6"/></pattern>
   <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
@@ -10,7 +10,7 @@
   <linearGradient id="gold-top" x2=".3" y2="1"><stop stop-color="#D8C486"/><stop offset="1" stop-color="#AD9554"/></linearGradient>
 </defs>
 <style>text { font-family: 'Segoe UI', Arial, sans-serif; } .mono { font-family: Consolas, 'Courier New', monospace; }</style>
-<rect x="0" y="0" width="206" height="44" rx="0" fill="#F0EFE7" />
-<rect x="1" y="1" width="204" height="42" rx="4" fill="#42634B" stroke="#42634B"/><text x="15" y="28" font-size="14" fill="#F0EFE7" font-weight="600" >Explore portfolio</text><path d="M177 27l10 -10m-10 0h10v10" fill="none" stroke="#F0EFE7" stroke-width="1.3" />
-<rect x="0" y="0" width="206" height="44" rx="0" fill="#808080" filter="url(#grain)" opacity=".065" pointer-events="none"/>
+<rect x="0" y="0" width="560" height="230" rx="0" fill="#F0EFE7" />
+<g transform="translate(56 53) scale(1)"><path d="M0 0H100V26H64V124H36V26H0Z" fill="#B39B59" transform="translate(0 0)"/><path d="M100 0H0V124H100V98H28V75H87V49H28V26H100Z" fill="#42634B" transform="translate(116 0)"/><path d="M0 124V0H28L72 75V0H100V124H73L28 49V124Z" fill="#42634B" transform="translate(232 0)"/><path d="M100 0H32Q0 0 0 32V92Q0 124 32 124H100V55H53V80H73V98H36Q28 98 28 89V35Q28 26 36 26H100Z" fill="#42634B" transform="translate(348 0)"/></g>
+<rect x="0" y="0" width="560" height="230" rx="0" fill="#808080" filter="url(#grain)" opacity=".065" pointer-events="none"/>
 </svg>

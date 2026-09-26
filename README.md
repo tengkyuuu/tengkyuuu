@@ -1,11 +1,11 @@
-<!-- Graphics are local SVGs. Rebuild with: python scripts/build_assets.py
-     Animation lives inside the images; interaction uses GitHub's native links and details.
-     All artwork respects prefers-reduced-motion. -->
+<!-- Static, self-contained SVG artwork. Rebuild with: python scripts/build_assets.py
+     Forest green / drafting paper / muted brass. Custom TENG wordmark and keycaps.
+     Interaction uses GitHub's native links and expandable details. -->
 
 <p align="center">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg" />
-  <img src="assets/hero.svg" width="100%" alt="James Vincent Calunsag. Computer engineer. From silicon to screen. Embedded systems, frontend, and design. Based in Dapitan City, Philippines." />
+  <img src="assets/hero.svg" width="100%" alt="TENG — James Vincent Calunsag. Computer engineer. Custom geometric lettering and mechanical keycaps in forest green, paper, and brass. Embedded systems, frontend, and design. Dapitan City, Philippines." />
 </picture>
 </p>
 
@@ -24,7 +24,7 @@
 
 <br />
 
-I’m **James**, a computer engineer who works from the circuit board to the browser. I build embedded systems, turn data into useful interfaces, and give the whole thing a considered visual identity.
+I’m **James**, but you can call me **Teng** — a computer engineer who works from the circuit board to the browser. I build embedded systems, turn data into useful interfaces, and give the whole thing a considered visual identity.
 
 **Dapitan City, Philippines · UTC+8 · BS Computer Engineering**<br />
 Open to **freelance work, internships, and collaborations**.
@@ -148,6 +148,19 @@ SHM brings my work together: a device that needs to run unattended, a connection
 <br />
 
 ## Behind the build
+
+<details>
+<summary><b>The Teng keyset</b> — a little personality on the desk</summary>
+
+<br />
+
+<img src="assets/keycaps.svg" width="100%" alt="The Teng keyset: a four-key mechanical keycap concept with custom T, E, N, and G legends, shown in perspective. Forest green, warm paper, and muted brass." />
+
+Four keys, one nickname. A small concept study in the things I enjoy building: physical objects, considered interfaces, and the details that make them feel personal.
+
+[View the keycap study](assets/keycaps.svg) &nbsp; · &nbsp; [View the Teng wordmark](assets/teng-logo.svg)
+
+</details>
 
 <details>
 <summary><b>How I approach a project</b></summary>

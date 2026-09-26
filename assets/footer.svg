@@ -1,27 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="112" viewBox="0 0 1200 112" role="img" aria-labelledby="title desc">
-<title id="title">Adaptability is the engineering skill. — tengkyuuu</title>
-<desc id="desc">Custom navy and white artwork for James Vincent Calunsag. Decorative motion stops when reduced motion is requested.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="title desc">
+<title id="title">TENG / Adaptability is the engineering skill.</title>
+<desc id="desc">Teng / James Vincent Calunsag. Forest green, muted gold, and textured drafting paper. Static artwork.</desc>
 <defs>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1B3A63" stroke-opacity=".3"/></pattern>
-  <radialGradient id="halo"><stop stop-color="#2E5A94" stop-opacity=".4"/><stop offset="1" stop-color="#0A1628" stop-opacity="0"/></radialGradient>
-  <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#2E5A94"/><stop offset=".5" stop-color="#0F2039"/><stop offset="1" stop-color="#1B3A63"/></linearGradient>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#B5BAA7" stroke-opacity=".24" stroke-width=".6"/></pattern>
+  <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  <filter id="shadow" x="-40%" y="-40%" width="200%" height="210%"><feDropShadow dx="3" dy="12" stdDeviation="9" flood-color="#233E31" flood-opacity=".22"/></filter>
+  <linearGradient id="green-top" x2=".3" y2="1"><stop stop-color="#638067"/><stop offset="1" stop-color="#3E6049"/></linearGradient>
+  <linearGradient id="cream-top" x2=".3" y2="1"><stop stop-color="#FAF8EF"/><stop offset="1" stop-color="#D8D9C9"/></linearGradient>
+  <linearGradient id="gold-top" x2=".3" y2="1"><stop stop-color="#D8C486"/><stop offset="1" stop-color="#AD9554"/></linearGradient>
 </defs>
-<style>
-text { font-family: 'Segoe UI', Arial, sans-serif; }
-.mono { font-family: Consolas, 'Courier New', monospace; }
-.orbit { transform-box: fill-box; transform-origin: center; animation: orbit 38s linear infinite; }
-.reverse { animation-direction: reverse; animation-duration: 52s; }
-.flow { stroke-dasharray: 5 19; animation: flow 5s linear infinite; }
-.pulse { animation: pulse 5s ease-in-out infinite; }
-.float { animation: float 7s ease-in-out infinite; }
-@keyframes orbit { to { transform: rotate(360deg); } }
-@keyframes flow { to { stroke-dashoffset: -96; } }
-@keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: .9; } }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-@media (prefers-reduced-motion: reduce) {
-  .orbit, .flow, .pulse, .float { animation: none !important; }
-}
-</style>
-<rect x="0" y="0" width="1200" height="112" rx="16" fill="#0A1628" />
-<path d="M0 1 H1200" fill="none" stroke="#2E5A94" stroke-width="1" /><path d="M0 1 H1200" fill="none" stroke="#C9CFD9" stroke-width="2" class="flow"/><text x="35" y="44" font-size="12" fill="#8A94A6" font-weight="400" class="mono" letter-spacing="2">THANKS FOR STOPPING BY</text><text x="35" y="78" font-size="23" fill="#FFFFFF" font-weight="500" >Adaptability is the engineering skill.</text><text x="1165" y="76" font-size="18" fill="#C9CFD9" font-weight="400" class="mono" text-anchor="end">— tengkyuuu</text>
+<style>text { font-family: 'Segoe UI', Arial, sans-serif; } .mono { font-family: Consolas, 'Courier New', monospace; }</style>
+<rect x="0" y="0" width="1200" height="140" rx="0" fill="#F0EFE7" />
+<rect x="0" y="0" width="1200" height="140" rx="0" fill="#42634B" /><g transform="translate(35 32) scale(0.5)"><path d="M0 0H100V26H64V124H36V26H0Z" fill="#B39B59" transform="translate(0 0)"/><path d="M100 0H0V124H100V98H28V75H87V49H28V26H100Z" fill="#F0EFE7" transform="translate(116 0)"/><path d="M0 124V0H28L72 75V0H100V124H73L28 49V124Z" fill="#F0EFE7" transform="translate(232 0)"/><path d="M100 0H32Q0 0 0 32V92Q0 124 32 124H100V55H53V80H73V98H36Q28 98 28 89V35Q28 26 36 26H100Z" fill="#F0EFE7" transform="translate(348 0)"/></g><path d="M300 30V110" fill="none" stroke="#89947A" stroke-width="1" /><text x="335" y="49" font-size="11" fill="#D5DBC9" font-weight="400" class="mono" letter-spacing="2">THANKS FOR STOPPING BY</text><text x="334" y="89" font-size="27" fill="#F0EFE7" font-weight="500" >Adaptability is the engineering skill.</text><text x="1160" y="118" font-size="10" fill="#D5DBC9" font-weight="400" class="mono" text-anchor="end">tengkyuuu / PH</text>
+<rect x="0" y="0" width="1200" height="140" rx="0" fill="#808080" filter="url(#grain)" opacity=".065" pointer-events="none"/>
 </svg>
