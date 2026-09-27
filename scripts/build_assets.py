@@ -5,6 +5,7 @@ The README supplies interaction through native links and disclosure sections.
 """
 
 from html import escape
+from base64 import b64encode
 from pathlib import Path
 
 ASSETS = Path(__file__).resolve().parents[1] / "assets"
@@ -83,37 +84,11 @@ def ruler(x, y, width, divisions=12):
     return c
 
 
-def keycap(x, y, letter, kind="green", sub=""):
-    side, rim, legend = {
-        "green": ("#243C2E", "#799079", PAPER),
-        "cream": ("#AAAFA0", "#FFFFF5", INK),
-        "gold": ("#7E693A", "#E6D49B", INK),
-    }[kind]
-    c = f'<g transform="translate({x} {y})">'
-    c += rect(0, 20, 116, 120, side, 15)
-    c += solid('M3 36L15 9H101L113 36V116Q113 127 102 127H14Q3 127 3 116Z', side)
-    c += rect(8, 0, 100, 108, f'url(#{kind}-top)', 14, f'stroke="{rim}" stroke-width="1.2"')
-    c += path('M22 6H94 Q102 6 102 16', rim, 1, 'opacity=".7"')
-    c += solid(GLYPHS[letter], legend, 'transform="translate(33 21) scale(.45)"')
-    c += text(23, 94, sub, 7, legend, extra=MONO)
-    c += path('M12 119H103', rim, .6, 'opacity=".3"')
-    return c + '</g>'
-
-
-def keyset(x, y, scale=1):
-    c = f'<g transform="translate({x} {y}) scale({scale})">'
-    c += '<g transform="matrix(.94 .25 -.34 .83 45 0)" filter="url(#shadow)">'
-    c += rect(-15, 2, 278, 300, '#A4AD99', 23, f'stroke="{SAGE}"')
-    c += rect(-15, -6, 278, 294, '#CED2BF', 23, f'stroke="{PAPER}"')
-    c += rect(-7, 2, 262, 278, INK, 17)
-    for xx, yy, letter, kind, sub in [
-        (0, 0, 'T', 'gold', '01 / TENG'),
-        (132, 0, 'E', 'cream', '02 / BUILD'),
-        (0, 139, 'N', 'cream', '03 / MAKE'),
-        (132, 139, 'G', 'green', '04 / PLAY'),
-    ]:
-        c += keycap(xx, yy, letter, kind, sub)
-    return c + '</g></g>'
+def keycap_image(x, y, width, height):
+    """Embed the TENG keyset so SVGs also work when loaded as images."""
+    encoded = b64encode((ASSETS / "keycaps-teng.png").read_bytes()).decode("ascii")
+    return (f'<image x="{x}" y="{y}" width="{width}" height="{height}" '
+            f'href="data:image/png;base64,{encoded}" preserveAspectRatio="xMidYMid meet"/>')
 
 
 def hero(mobile=False):
@@ -122,7 +97,7 @@ def hero(mobile=False):
     c = rect(0, 86, w, h-165, 'url(#grid)')
     c += wordmark(p, 29, .20, [INK]*4)
     c += text(p+108, 47, '/ tengkyuuu', 13, MUTED, extra=MONO)
-    c += text(w-p, 47, 'ENGINEERING & DESIGN', 11, INK, extra=f'{MONO} text-anchor="end" letter-spacing="1.5"')
+    c += text(w-p, 47, 'SOFTWARE & DESIGN', 11, INK, extra=f'{MONO} text-anchor="end" letter-spacing="1.5"')
     c += path(f'M{p} 75H{w-p}', INK)
     c += text(p, 116, 'PERSONAL FIELD NOTES', 11, MUTED, extra=f'{MONO} letter-spacing="2"')
     c += text(w-p, 116, 'VOL. 01 / PH', 11, MUTED, extra=f'{MONO} text-anchor="end"')
@@ -139,19 +114,19 @@ def hero(mobile=False):
         c += cross(xx, mark_y+mark_h, 10, GOLD)
     label_y = 379 if mobile else 424
     c += rect(p, label_y, 258, 29, GREEN)
-    c += text(p+13, label_y+19, 'CIRCUITS. CODE. CHARACTER.', 11, PAPER, extra=f'{MONO} letter-spacing="1"')
+    c += text(p+13, label_y+19, 'CODE. CRAFT. CHARACTER.', 11, PAPER, extra=f'{MONO} letter-spacing="1"')
     name_y = 455 if mobile else 501
     c += text(p, name_y, 'James Vincent Calunsag', 31 if mobile else 34, INK, 600, 'letter-spacing="-1"')
-    c += text(p, name_y+32, 'Computer engineer. Builder by nature.', 18, MUTED)
-    c += text(p, name_y+61, 'From the circuit board to the browser.', 18, MUTED)
+    c += text(p, name_y+32, 'Computer engineer. Focused on software.', 18, MUTED)
+    c += text(p, name_y+61, 'Thoughtful interfaces. Useful applications.', 18, MUTED)
     if mobile:
-        c += keyset(190, 571, 1.03)
+        c += keycap_image(145, 550, 350, 350)
         c += text(p, 573, 'FIG. 01', 10, MUTED, extra=MONO)
         c += text(w-p, 905, 'THE TENG KEYSET / 2 × 2', 11, MUTED, extra=f'{MONO} text-anchor="end"')
     else:
         c += path('M747 146V603', LINE, .8)
         c += text(792, 169, 'OBJECT STUDY / 001', 11, MUTED, extra=f'{MONO} letter-spacing="1.5"')
-        c += keyset(825, 221, 1.06)
+        c += keycap_image(786, 201, 350, 350)
         c += path('M804 230V208H830 M1118 544H1138V519', SAGE)
         c += path('M807 567H1125 M807 560V574 M1125 560V574', SAGE, .8)
         c += text(966, 590, 'THE TENG KEYSET / 2 × 2', 11, MUTED, extra=f'{MONO} text-anchor="middle" letter-spacing="1"')
@@ -160,10 +135,10 @@ def hero(mobile=False):
     c += rect(p, fy+24, 7, 7, GREEN)
     c += text(p+18, fy+32, 'OPEN TO OPPORTUNITIES', 11, INK, extra=f'{MONO} letter-spacing=".6"')
     c += text(w-p, fy+32, 'DAPITAN, PH / UTC+8', 11, MUTED, extra=f'{MONO} text-anchor="end"')
-    c += text(p, h-15, 'EMBEDDED SYSTEMS / FRONTEND / VISUAL DESIGN', 9, MUTED, extra=f'{MONO} letter-spacing="1.1"')
+    c += text(p, h-15, 'SOFTWARE / FRONTEND / VISUAL DESIGN', 9, MUTED, extra=f'{MONO} letter-spacing="1.1"')
     svg('hero-mobile.svg' if mobile else 'hero.svg', w, h,
         'TENG — James Vincent Calunsag / Computer engineer', c,
-        'A custom TENG wordmark on architectural construction lines, with a dimensional four-key mechanical keycap mockup in forest green, ivory, and muted gold. James Vincent Calunsag. Embedded systems, frontend, and visual design. Open to opportunities. Dapitan, Philippines.')
+        'A custom TENG wordmark on architectural construction lines, with four translucent forest green resin keycaps bearing ivory T, E, N, and G letters in a 2 by 2 arrangement. Warm paper with muted brass accents. James Vincent Calunsag. Computer engineer focused on software, frontend, and visual design. Open to opportunities. Dapitan, Philippines.')
 
 
 def portfolio():
@@ -238,7 +213,7 @@ def identity():
     c = rect(0, 0, 1000, 560, 'url(#grid)')
     c += text(36, 43, 'ON MY DESK / A KEYCAP STUDY', 12, MUTED, extra=f'{MONO} letter-spacing="2"')
     c += path('M36 64H964', INK)
-    c += keyset(210, 118, 1.14)
+    c += keycap_image(106, 81, 410, 410)
     c += text(641, 157, 'THE TENG', 34, INK, 600, 'letter-spacing="-1"')
     c += text(641, 199, 'KEYSET.', 44, INK, 600, 'letter-spacing="-2"')
     c += text(643, 237, 'Four keys. One nickname.', 16, MUTED)
@@ -247,12 +222,13 @@ def identity():
         c += rect(xx, 278, 76, 48, color, 2, f'stroke="{LINE}"')
         c += text(xx, 346, label, 10, MUTED, extra=MONO)
         c += text(xx, 365, color, 10, MUTED, extra=MONO)
-    c += text(643, 414, '01 / Mechanical keycap concept', 12, MUTED, extra=MONO)
-    c += text(643, 437, '02 / Custom geometric legends', 12, MUTED, extra=MONO)
+    c += text(643, 414, '01 / Translucent forest resin', 12, MUTED, extra=MONO)
+    c += text(643, 437, '02 / Ivory T E N G legends', 12, MUTED, extra=MONO)
     c += path('M36 495H964', INK)
     c += wordmark(36, 513, .17)
     c += text(964, 534, 'OBJECT STUDY / 001', 11, MUTED, extra=f'{MONO} text-anchor="end"')
-    svg('keycaps.svg', 1000, 560, 'TENG mechanical keycap concept — forest, paper, and brass', c)
+    svg('keycaps.svg', 1000, 560, 'The TENG keyset — forest, paper, and brass', c,
+        'Four translucent forest green resin keycaps in a 2 by 2 arrangement, with ivory T and E on the top row and N and G on the bottom row. Adapted from keycap.avif. Warm paper background and forest, paper, and brass palette swatches.')
 
 
 if __name__ == '__main__':

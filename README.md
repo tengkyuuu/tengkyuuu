@@ -1,11 +1,11 @@
 <!-- Static, self-contained SVG artwork. Rebuild with: python scripts/build_assets.py
-     Forest green / drafting paper / muted brass. Custom TENG wordmark and keycaps.
+     Forest green / drafting paper / muted brass. Custom TENG wordmark and resin keyset.
      Interaction uses GitHub's native links and expandable details. -->
 
 <p align="center">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg" />
-  <img src="assets/hero.svg" width="100%" alt="TENG — James Vincent Calunsag. Computer engineer. Custom geometric lettering and mechanical keycaps in forest green, paper, and brass. Embedded systems, frontend, and design. Dapitan City, Philippines." />
+  <img src="assets/hero.svg" width="100%" alt="TENG — James Vincent Calunsag. Computer engineer focused on software. Custom geometric lettering and four forest green resin keycaps spelling TENG on warm paper with brass accents. Software, frontend, and visual design. Dapitan City, Philippines." />
 </picture>
 </p>
 
@@ -24,7 +24,7 @@
 
 <br />
 
-I’m **James**, but you can call me **Teng** — a computer engineer who works from the circuit board to the browser. I build embedded systems, turn data into useful interfaces, and give the whole thing a considered visual identity.
+I’m **James**, but you can call me **Teng** — a computer engineer focused on software. I build web and mobile applications, turn data into useful interfaces, and give the whole thing a considered visual identity. I also have an interest in networking and how systems communicate.
 
 **Dapitan City, Philippines · UTC+8 · BS Computer Engineering**<br />
 Open to **freelance work, internships, and collaborations**.
@@ -36,26 +36,7 @@ Open to **freelance work, internships, and collaborations**.
 Three disciplines. One connected workflow. **Open a section to explore.**
 
 <details>
-<summary><b>01 &nbsp; Embedded systems</b> — where the signal starts</summary>
-
-<br />
-
-`ESP32` `Arduino / AVR` `C / C++` `Verilog / Quartus` `KiCad`
-
-Firmware, fabricated PCBs, and the connections between them. I work with Wi-Fi and BLE, sensor conditioning, and power budgets that matter once a device leaves the desk.
-
-**What I work on**
-
-- Sensor acquisition and firmware on ESP32 and AVR.
-- PCB design in KiCad, through to fabrication.
-- Digital logic in Verilog using Quartus.
-
-[Explore hardware repositories ↗](https://github.com/tengkyuuu?tab=repositories&q=&type=&language=c%2B%2B&sort=)
-
-</details>
-
-<details>
-<summary><b>02 &nbsp; Frontend engineering</b> — where the signal becomes useful</summary>
+<summary><b>01 &nbsp; Frontend & mobile</b> — interfaces people use</summary>
 
 <br />
 
@@ -65,11 +46,30 @@ Interfaces from routing and state to forms, data fetching, accessibility, and th
 
 **What I work on**
 
-- Dashboards that make device data understandable.
+- Dashboards that make complex data understandable.
 - Business applications, admin portals, and customer interfaces.
 - Interactive experiences with a little personality.
 
 [Explore frontend repositories ↗](https://github.com/tengkyuuu?tab=repositories&q=&type=&language=typescript&sort=)
+
+</details>
+
+<details>
+<summary><b>02 &nbsp; Application development</b> — the work behind the interface</summary>
+
+<br />
+
+`Node.js` `Python` `Firebase` `Supabase`
+
+The services and data that make an application useful: authentication, storage, realtime updates, and the connections between them.
+
+**What I work on**
+
+- Connecting interfaces to APIs and application data.
+- Authentication, database integration, and file storage.
+- Python scripts for data processing and everyday automation.
+
+[Explore my repositories ↗](https://github.com/tengkyuuu?tab=repositories)
 
 </details>
 
@@ -93,13 +93,13 @@ Identity systems, typography, and reusable design tokens, followed by the compon
 </details>
 
 <details>
-<summary><b>+ &nbsp; The supporting tools</b> — what keeps everything connected</summary>
+<summary><b>+ &nbsp; Tools & networking</b> — what keeps everything connected</summary>
 
 <br />
 
-`Node.js` `Python` `Firebase` `Supabase` `Git` `Linux`
+`Git` `Linux`
 
-Authentication, realtime data, storage, scheduled jobs, and Python for the data wrangling between a sensor and a chart.
+Version control, the command line, and a little networking: understanding how applications communicate and finding where a connection breaks down.
 
 </details>
 
@@ -117,21 +117,21 @@ Authentication, realtime data, storage, scheduled jobs, and Python for the data 
 
 | Project | What it does | Disciplines |
 | :--- | :--- | :--- |
-| **SHM** | Structural health monitoring, from IoT sensors to a dashboard | Embedded · Web |
 | **Stormfresh** | A poultry ERP running on a working farm | Web |
 | **Physiopaño** | A mobile app and its admin web portal | Mobile · Web |
 | **Rallys Equities** | A company website, from brand to build | Design · Web |
 | **MYKTECH** | A software studio website | Web |
 | **FameCRM** | A CRM frontend | Web |
+| **SHM** | A structural health monitoring system with a dashboard for sensor data | IoT · Web |
 
 <details>
-<summary><b>Explore SHM</b> — follow a reading from sensor to screen</summary>
+<summary><b>Explore SHM</b> — making monitoring data useful</summary>
 
 <br />
 
 <img src="assets/signal-path.svg" width="100%" alt="SHM signal path: sensor to ESP32, Wi-Fi / MQTT transport, time-series storage, and dashboard charts and alerts." />
 
-SHM brings my work together: a device that needs to run unattended, a connection that can drop, and a dashboard that someone can rely on.
+SHM connects sensor data to a monitoring dashboard. Its software brings readings into storage and turns them into charts and alerts; Wi-Fi / MQTT carries the data between the device and the application.
 
 | Stage | The work |
 | :--- | :--- |
@@ -154,9 +154,9 @@ SHM brings my work together: a device that needs to run unattended, a connection
 
 <br />
 
-<img src="assets/keycaps.svg" width="100%" alt="The Teng keyset: a four-key mechanical keycap concept with custom T, E, N, and G legends, shown in perspective. Forest green, warm paper, and muted brass." />
+<img src="assets/keycaps.svg" width="100%" alt="Four translucent forest green keycaps in a 2 by 2 arrangement: ivory T and E on the top row, N and G on the bottom row. Warm paper and muted brass color swatches complete the palette." />
 
-Four keys, one nickname. A small concept study in the things I enjoy building: physical objects, considered interfaces, and the details that make them feel personal.
+Four keys, one nickname. Translucent forest green keycaps with ivory letters spelling **TENG**, paired with warm paper and muted brass. A little desk inspiration, in the profile’s colors.
 
 [View the keycap study](assets/keycaps.svg) &nbsp; · &nbsp; [View the Teng wordmark](assets/teng-logo.svg)
 
@@ -167,13 +167,13 @@ Four keys, one nickname. A small concept study in the things I enjoy building: p
 
 <br />
 
-- Read the datasheet before the tutorial.
-- Reach for the scope before the print statement.
+- Understand the problem before choosing the stack.
+- Make the interface clear and the code easy to follow.
 - Put types at the boundaries.
 - Ship a small working path through the whole system, then expand it.
 - Measure what matters.
 
-My repositories include coursework, hardware experiments, and client work I can share publicly.
+My repositories include coursework, software experiments, and client work I can share publicly.
 
 [Browse the repositories ↗](https://github.com/tengkyuuu?tab=repositories) &nbsp; · &nbsp; [View contributions ↗](https://github.com/tengkyuuu?tab=overview)
 
@@ -186,8 +186,8 @@ My repositories include coursework, hardware experiments, and client work I can 
 
 | You need | I can help with |
 | :--- | :--- |
-| **Device to dashboard** | Sensor firmware, transport, and the interface that makes the data useful. |
 | **A frontend that ships** | React and TypeScript applications, from interface design to implementation. |
+| **An app that connects the pieces** | Web and mobile interfaces connected to authentication, APIs, and data. |
 | **Brand and build** | A visual identity and the website that brings it to life. |
 
 I'm open to freelance work, internships, and collaborations. Based in **UTC+8**, with overlap for EU mornings and US evenings.
@@ -200,7 +200,7 @@ I'm open to freelance work, internships, and collaborations. Based in **UTC+8**,
 
 ## Let's build something
 
-Have a board to bring up, an interface to ship, or an idea that needs both? **I'd like to hear about it.**
+Have an app to build, an interface to ship, or a website that needs a fresh identity? **I'd like to hear about it.**
 
 **[Email me ↗](mailto:jamescalunsag13@gmail.com)** &nbsp; · &nbsp; [LinkedIn](https://www.linkedin.com/in/james-vincent-calunsag) &nbsp; · &nbsp; [Portfolio.docx](https://engrjamescalunsag.vercel.app/)
 
