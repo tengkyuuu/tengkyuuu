@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://engrjamescalunsag.vercel.app/"><img src="assets/button-portfolio.svg" height="40" alt="Explore my portfolio" /></a>&nbsp;
+  <a href="https://jamescalunsag.online/"><img src="assets/button-portfolio.svg" height="40" alt="Explore my portfolio" /></a>&nbsp;
   <a href="mailto:jamescalunsag13@gmail.com"><img src="assets/button-email.svg" height="40" alt="Email me" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/james-vincent-calunsag"><img src="assets/button-linkedin.svg" height="40" alt="Connect on LinkedIn" /></a>
 </p>
@@ -88,7 +88,7 @@ Identity systems, typography, and reusable design tokens, followed by the compon
 - Type scales, layouts, and interface systems.
 - Taking a design through to its implementation.
 
-[See design and development work ↗](https://engrjamescalunsag.vercel.app/)
+[See design and development work ↗](https://jamescalunsag.online/)
 
 </details>
 
@@ -108,7 +108,7 @@ Version control, the command line, and a little networking: understanding how ap
 ## Selected work
 
 <p>
-<a href="https://engrjamescalunsag.vercel.app/">
+<a href="https://jamescalunsag.online/">
   <img src="assets/portfolio.svg" width="100%" alt="Portfolio.docx — a portfolio that behaves like a Word document. Open the portfolio to explore my work." />
 </a>
 </p>
@@ -141,7 +141,7 @@ SHM connects sensor data to a monitoring dashboard. Its software brings readings
 | **Store** | Keep a time-series record. |
 | **Understand** | Turn readings into charts and alerts. |
 
-[Explore the project write-ups in my portfolio ↗](https://engrjamescalunsag.vercel.app/)
+[Explore the project write-ups in my portfolio ↗](https://jamescalunsag.online/)
 
 </details>
 
@@ -202,7 +202,7 @@ I'm open to freelance work, internships, and collaborations. Based in **UTC+8**,
 
 Have an app to build, an interface to ship, or a website that needs a fresh identity? **I'd like to hear about it.**
 
-**[Email me ↗](mailto:jamescalunsag13@gmail.com)** &nbsp; · &nbsp; [LinkedIn](https://www.linkedin.com/in/james-vincent-calunsag) &nbsp; · &nbsp; [Portfolio.docx](https://engrjamescalunsag.vercel.app/)
+**[Email me ↗](mailto:jamescalunsag13@gmail.com)** &nbsp; · &nbsp; [LinkedIn](https://www.linkedin.com/in/james-vincent-calunsag) &nbsp; · &nbsp; [Portfolio.docx](https://jamescalunsag.online/)
 
 <br />
 
